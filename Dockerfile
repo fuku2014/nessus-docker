@@ -15,4 +15,4 @@ RUN rpm -ivh /tmp/Nessus-${NESSUS_VERSION}-es7.x86_64.rpm
 
 EXPOSE 8834
 
-ENTRYPOINT [ "systemctl start nessusd.service" ]
+ENTRYPOINT [ "/opt/nessus/sbin/nessusd" ]
